@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nex_drop/views/brand_splash_screen.dart';
 
 import '../constants/app_colors.dart';
 
@@ -12,7 +13,18 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen>
     {
 
-
+      @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(milliseconds: 1500),
+    (){
+      if(!mounted) return;
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context){
+        return BrandSplashScreen();
+      }));
+    }
+    );
+  }
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.sizeOf(context).width;
