@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nex_drop/constants/app_colors.dart';
+
+import '../../constants/app_colors.dart';
+import 'auth/sign_up_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
@@ -100,7 +102,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   elevation: 0,
                   shape: RoundedRectangleBorder(borderRadius: .circular(16)),
                 ),
-                onPressed: () {},
+                onPressed: _onTapGetStartedButton,
                 child: Row(
                   mainAxisAlignment: .center,
                   children: [
@@ -145,6 +147,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           ],
         ),
       ),
+    );
+  }
+
+  void _onTapGetStartedButton() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => SignUpScreen()),
     );
   }
 }

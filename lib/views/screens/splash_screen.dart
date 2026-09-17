@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nex_drop/views/brand_splash_screen.dart';
+import 'package:nex_drop/views/screens/brand_splash_screen.dart';
 
-import '../constants/app_colors.dart';
+import '../../constants/app_colors.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

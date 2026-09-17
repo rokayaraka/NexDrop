@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 
-import '../constants/app_colors.dart';
+import '../../constants/app_colors.dart';
 import 'welcome_screen.dart';
 
 class BrandSplashScreen extends StatefulWidget {
