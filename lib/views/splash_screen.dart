@@ -1,13 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:nex_drop/constants/app_colors.dart';
 
-class SplashScreen extends StatelessWidget {
+import '../constants/app_colors.dart';
+
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
-     final screenWidth = MediaQuery.sizeOf(context).width;
+  State<SplashScreen> createState() => _SplashScreenState();
+}
 
+class _SplashScreenState extends State<SplashScreen>
+    {
+
+
+  @override
+  Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.sizeOf(context).width;
     return Scaffold(
       body: Container(
         width: .infinity,
@@ -20,8 +28,9 @@ class SplashScreen extends StatelessWidget {
           ),
         ),
         child: Center(
-          child: Image.asset("assets/images/wanmac_logo_white.png",
-          width: screenWidth*0.80,
+          child: Image.asset(
+            "assets/images/wanmac_logo_white.png",
+            width: screenWidth * 0.80,
           ),
         ),
       ),

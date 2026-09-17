@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'views/splash_screen.dart';
+import 'views/brand_splash_screen.dart';
+
 
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: SplashScreen(),
+      home: BrandSplashScreen(),
     );
   }
 }
